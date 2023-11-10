@@ -1,16 +1,15 @@
-# untitled
+# CardFlipper
 
-A new Flutter project.
+App made for the mobile team challenge at CloudWalk
 
-## Getting Started
+## About
 
-This project is a starting point for a Flutter application.
+This project uses model_viewer_plus package: https://pub.dev/packages/model_viewer_plus, it renders the google's model_viewer web component.
 
-A few resources to get you started if this is your first Flutter project:
+It renders a 3D model credit card, which is a .glb file.
+The original 3D project was downloaded from sketchfab: https://sketchfab.com/3d-models/credit-card-4c4117d766f342cc9e0fa3d79e9de654
+I modified it, including the required animations for flipping the card, rendering the used .glb file.
+The widget that renders the .glb file is wrapped with a gesture detector, which identifies where the user touches the screen, and assigns the correct animation to the widget.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## TO-DO
+Unfortunately, I couldn't find a way to make the rendering widget dynamic, triggering the assigned animation when the user touches the screen. The only way to play animations, by now, is to assign one and set autoplay: true.
