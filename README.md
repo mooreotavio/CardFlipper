@@ -1,6 +1,8 @@
 # CardFlipper
 
-App made for the mobile team challenge at CloudWalk
+App made for the mobile team challenge at CloudWalk.
+
+The idea was to make an app that renders a responsive 3D model of a credit card, with commands such as flipping and spinning the card.
 
 ## About
 
